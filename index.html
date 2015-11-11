@@ -805,7 +805,24 @@ If payment has not occurred by the payment deadline a notification of closure an
 
         L.mapbox.accessToken = 'pk.eyJ1IjoiZXNpc2EiLCJhIjoiRGJuWWFPdyJ9.9r5vGbd_Hza2UUbko1nYgg';
 
-        setTimeout(createMap, 500);
+        $(function() {
+
+            // The map container changes size so we need to wait for this to 
+            // happen before we insert the map. 
+            var $element = $('#headquarters-map');
+            var lastHeight = $('#headquarters-map').css('height');
+            function checkForChangesInMap() {
+                if ($element.css('height') != lastHeight) {
+                    createMap();
+                    lastHeight = $element.css('height'); 
+                } else {
+                    setTimeout(checkForChangesInMap, 200);
+                }
+            }
+            checkForChangesInMap()
+
+        });
+
 
         function createMap() {
             var map = L.mapbox.map('headquarters-map', 'esisa.348d481b',{
