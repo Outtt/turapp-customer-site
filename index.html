@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="./css2/magnific-popup.css" type="text/css" />
 
     <link rel="stylesheet" href="./css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="./css2/cscarousel.ajax.css" type="text/css" />
+    <link rel="stylesheet" href="./css2/cscarousel.css" type="text/css" />
 
     <link rel="stylesheet" href="./css2/responsive.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -33,7 +35,8 @@
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./js/plugins.js"></script>
     <script type="text/javascript" src="./js/canvas.slider.fade.js"></script>
-
+    <script type="text/javascript" src="./js/cscarousel.ajax.js"></script>
+    <script type="text/javascript" src="./js/cscarousel.js"></script>
     <!-- Mapbox map
     ============================================= -->
     <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
@@ -526,19 +529,43 @@
                 <h3>Already trusted by</h3>
             </div>
 
-            <div id="oc-clients" class="owl-carousel topmargin image-carousel">
-
-                <div class="oc-item"><a href="http://www.nasjonalparkstyre.no/Forollhogna/"><img src="./images/clients/forollhogna_transp.png" alt="Clients" class="img-circle"></a></div>
-                <div class="oc-item"><a href="http://regionhadeland.no"><img src="./images/clients/hadeland_transp.png" alt="Clients" class="img-circle"></a></div>
-                <div class="oc-item"><a href="http://www.nasjonalparkstyre.no/Jotunheimen/"><img src="./images/clients/jotunheimen_transp.png" alt="Clients" class="img-circle"></a></div>
-                <div class="oc-item"><a href="http://www.kongevegenoverfilefjell.com"><img src="./images/clients/kongevegen_transp.png" alt="Clients" class="img-circle"></a></div>
-                <div class="oc-item"><a href="http://www.landsbyendokka.com"><img src="./images/clients/land_transp.png" alt="Clients" class="img-circle"></a></div>
-                <div class="oc-item"><a href="http://www.nasjonalparkstyre.no/Langsua/"><img src="./images/clients/langsua_transp.png" alt="Clients" class="img-circle"></a></div>
-                <div class="oc-item"><a href="http://www.valdres.com"><img src="./images/clients/valdres_transp.png" alt="Clients" class="img-circle"></a></div>
-                <div class="oc-item"><a href="http://www.vangivaldres.no"><img src="./images/clients/vang_transp.png" alt="Clients" class="img-circle"></a></div>
-                <div class="oc-item"><a href="http://www.ytrehvaler.no"><img src="./images/clients/TA_ytrehvaler_transp.png" alt="Clients" class="img-circle"></a></div>
-                <div class="oc-item"><a href="https://finnskogen.wordpress.com"><img src="./images/clients/finnskogen_transp.png" alt="Clients" class="img-circle"></a></div>
-
+            <div class="jcarousel-wrapper">
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <div id="clients" class="jcarousel">
+                    <ul class="ccarousel">
+                        <li class="ccarousel-item" style="position: relative;">
+                            <div class=" oc-item"><a href="http://www.nasjonalparkstyre.no/Forollhogna/"><img src="./images/clients/forollhogna_transp.png" alt="Clients" class="img-circle"></a></div>
+                        </li>
+                        <li class="ccarousel-item" style="position: relative;">
+                            <div class="oc-item"><a href="http://regionhadeland.no"><img src="./images/clients/hadeland_transp.png" alt="Clients" class="img-circle"></a></div>
+                        </li>
+                        <li class="ccarousel-item" style="position: relative;">
+                            <div class="oc-item"><a href="http://www.nasjonalparkstyre.no/Jotunheimen/"><img src="./images/clients/jotunheimen_transp.png" alt="Clients" class="img-circle"></a></div>
+                        </li>
+                        <li class="ccarousel-item" style="position: relative;">
+                            <div class="oc-item"><a href="http://www.kongevegenoverfilefjell.com"><img src="./images/clients/kongevegen_transp.png" alt="Clients" class="img-circle"></a></div>
+                        </li>
+                        <li class="ccarousel-item" style="position: relative;">
+                            <div class="oc-item"><a href="http://www.landsbyendokka.com"><img src="./images/clients/land_transp.png" alt="Clients" class="img-circle"></a></div>
+                        </li>
+                        <li class="ccarousel-item" style="position: relative;">
+                            <div class="oc-item"><a href="http://www.nasjonalparkstyre.no/Langsua/"><img src="./images/clients/langsua_transp.png" alt="Clients" class="img-circle"></a></div>
+                        </li>
+                        <li class="ccarousel-item" style="position: relative;">
+                            <div class="oc-item"><a href="http://www.valdres.com"><img src="./images/clients/valdres_transp.png" alt="Clients" class="img-circle"></a></div>
+                        </li>
+                        <li class="ccarousel-item" style="position: relative;">
+                            <div class="oc-item"><a href="http://www.vangivaldres.no"><img src="./images/clients/vang_transp.png" alt="Clients" class="img-circle"></a></div>
+                        </li>
+                        <li class="ccarousel-item" style="position: relative;">
+                            <div class="oc-item"><a href="http://www.ytrehvaler.no"><img src="./images/clients/hvaler_transp.png" alt="Clients" class="img-circle"></a></div>
+                        </li>
+                        <li class="ccarousel-item" style="position: relative;">
+                            <div class="oc-item"><a href="https://finnskogen.wordpress.com"><img src="./images/clients/finnskogen_transp.png" alt="Clients" class="img-circle"></a></div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
             </div>
 
             <script type="text/javascript">
