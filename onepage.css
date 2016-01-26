@@ -651,3 +651,8 @@ textarea.border-form-control {
 	.overlay-menu #primary-menu.dark ul { background-color: transparent; }
 
 }
+
+
+.sign_up_button_subtitle {
+	font-size: 12px;
+}
