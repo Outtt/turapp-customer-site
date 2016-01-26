@@ -1513,7 +1513,7 @@ var SEMICOLON = SEMICOLON || {};
 						video: flexsVideo,
 						controlNav: flexsPagi,
 						directionNav: flexsArrows,
-						smoothHeight: flexsSheight,
+						//smoothHeight: flexsSheight,
 						useCSS: flexsUseCSS,
 						start: function(slider){
 							SEMICOLON.widget.animations();
